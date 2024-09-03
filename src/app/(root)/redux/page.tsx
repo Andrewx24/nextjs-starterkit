@@ -1,9 +1,11 @@
+import Counter from "@/components/Counter";
 
 
 export default function Page() {
   return (
-    <div>
-      Page
-    </div>
+   <main>
+    <h1> Redux Page</h1>
+    <Counter/>
+   </main>
   )
 }
