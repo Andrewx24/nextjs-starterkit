@@ -1,12 +1,12 @@
 'use client';
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useAppDispatch,useAppSelector } from '@/lib/redux/hooks';
 import { RootState } from '../lib/redux/store';
 import { increment, decrement, incrementByAmount } from '@/lib/redux/faetures/counter/counterSlice'
 
 const Counter: React.FC = () => {
-  const dispatch = useDispatch();
-  const count = useSelector((state: RootState) => state.counter.value);
+  const dispatch = useAppDispatch();
+  const count = useAppSelector((state: RootState) => state.counter.value);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
