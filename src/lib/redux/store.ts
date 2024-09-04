@@ -1,11 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
 import counterSlice from '../redux/faetures/counter/counterSlice'
-
+import pizzaSlice from '../redux/faetures/slices/pizzaSlice'
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
       counter: counterSlice,
+      pizza: pizzaSlice,
     }
   })
 }
