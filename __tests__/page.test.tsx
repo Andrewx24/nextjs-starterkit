@@ -1,13 +1,10 @@
-import "@testing-library/jest-dom";
-import { render, screen } from "@testing-library/react";
-import Page from "../src/app/(root)/(home)/page";
+import { render, screen } from '@testing-library/react';
+import Page from '../src/app/(root)/(home)/page';
 
-describe("Page", () => {
-  it("renders a heading", () => {
-    render(<Page />);
-
-    const heading = screen.getByRole("heading", { level: 1 });
-
-    expect(heading).toBeInTheDocument();
-  });
+it('renders all h1 headings', () => {
+  render(<Page />);
+  
+  const headings = screen.getAllByRole('heading', { level: 1 });
+  
+  expect(headings.length).toBe(2);  // Adjust based on the number of h1 elements expected
 });

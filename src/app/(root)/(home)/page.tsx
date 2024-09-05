@@ -1,9 +1,11 @@
-import Image from "next/image";
-
-export default function Home() {
+import Link from 'next/link'
+ 
+export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    Next JS APP STARTER KIT TESTING, REDUX, GRAPHQL
-    </main>
-  );
+    <div>
+      <h1>Home</h1>
+      <h1> Next Js starter kit</h1>
+      <Link href="/about">About</Link>
+    </div>
+  )
 }
