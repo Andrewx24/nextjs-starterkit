@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import  Path from '@/components/Path';
+
 
 const Footer = () => {
   return (
@@ -18,6 +20,7 @@ const Footer = () => {
           </nav>
         </div>
         <div className="text-center text-gray-500 text-xs mt-4">
+       <Path/>
           &copy; {new Date().getFullYear()} Your Company. All rights reserved.
         </div>
       </div>

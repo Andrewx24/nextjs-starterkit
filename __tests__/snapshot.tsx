@@ -1,4 +1,4 @@
-// __tests__/page.test.tsx
+
 
 import { render } from '@testing-library/react';
 import Page from '../src/app/(root)/(home)/page';
