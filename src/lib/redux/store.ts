@@ -1,17 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterSlice from '../redux/faetures/counter/counterSlice'
-import pizzaSlice from '../redux/faetures/slices/pizzaSlice'
 
+// Create your store
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      counter: counterSlice,
-      pizza: pizzaSlice,
+      // Add your reducers here, for example:
+      // counter: counterReducer
     }
   })
 }
 
-// Infer the type of makeStore
+// Infer the type of the store
 export type AppStore = ReturnType<typeof makeStore>
 // Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<AppStore['getState']>
