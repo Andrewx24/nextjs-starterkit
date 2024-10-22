@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.11.8",
+    "@graphql-tools/schema": "^10.0.7",
     "@reduxjs/toolkit": "^2.2.7",
     "apollo-server-micro": "^3.13.0",
     "babel-plugin-react-compiler": "0.0.0-experimental-7449567-20240904",
