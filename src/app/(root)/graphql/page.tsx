@@ -1,4 +1,4 @@
-// app/starwars/page.tsx
+// app/(root)/graphql/page.tsx
 
 type Person = {
   name: string;
@@ -17,14 +17,13 @@ const fetchStarWarsData = async (): Promise<Person[]> => {
     }
   `;
 
-  // Add Next.js fetch options for static caching
   const response = await fetch(`/api/graphql`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      // Cache the result statically (if the data doesn't change often)
-      next: { revalidate: 86400 }, // revalidate after 1 day (86400 seconds)
     },
+    // Move the `next` revalidate option here
+    next: { revalidate: 86400 }, // Cache the result statically (if the data doesn't change often)
     body: JSON.stringify({ query }),
   });
 
