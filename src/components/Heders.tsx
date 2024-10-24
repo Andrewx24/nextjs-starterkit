@@ -21,7 +21,10 @@ const Header = () => {
               Testing
             </Link>
             <Link href="/graphql" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-              GraphQL
+             GraphQL
+            </Link>
+            <Link href="/rest" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+              REST API
             </Link>
             <Link href="/signin" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
               Sign In
@@ -45,9 +48,13 @@ const Header = () => {
         <Link href="/graphql" className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">
           GraphQL
         </Link>
+        <Link href="/serveractions" className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">
+          Server Actions
+        </Link>
         <Link href="/signin" className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">
           Sign In
         </Link>
+
         <Link href="/signup" className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">
           Sign Up
         </Link>
