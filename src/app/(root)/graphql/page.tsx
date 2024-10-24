@@ -1,17 +1,14 @@
-// app/(root)/graphql/page.tsx
-
 type Person = {
   name: string;
-  gender: string;
   height: string;
 };
 
+// Fetch Star Wars data using the updated schema (name and height only)
 const fetchStarWarsData = async (): Promise<Person[]> => {
   const query = `
     query {
       people {
         name
-        gender
         height
       }
     }
@@ -46,7 +43,6 @@ const StarWarsComponent = async () => {
           {people.map((person, index) => (
             <li key={index}>
               <h2>{person.name}</h2>
-              <p>Gender: {person.gender}</p>
               <p>Height: {person.height}</p>
             </li>
           ))}
