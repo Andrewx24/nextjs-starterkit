@@ -7,6 +7,7 @@ export default function Page() {
       <h1>Home</h1>
       <h1> Next Js starter kit</h1>
       <Link href="/about"> About</Link>
+      <Link href="/store"> Store Page</Link>
     </div>
   )
 }
