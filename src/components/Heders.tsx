@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-
+import Globalsearchbar from './search/Globalsearchbar';
 const Header = () => {
   return (
     <header className="bg-white shadow-md">
@@ -12,7 +12,7 @@ const Header = () => {
               <Image src="/logo.png" alt="Logo" width={70} height={70} />
             </Link>
           </div>
-
+           <Globalsearchbar/>
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-6">
             <Link href="/" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
